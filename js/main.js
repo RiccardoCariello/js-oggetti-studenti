@@ -45,7 +45,7 @@ studenti.forEach(element =>{
 
 studenti.push(StudentPush());
 
-
+PrintStudents();
 
 
 
@@ -73,4 +73,15 @@ function StudentPush(){
     }
 
     return newstudent;
+}
+
+function PrintStudents(){
+    studenti.forEach(element =>{
+        console.log(`
+        -------------------${element.name}-----------------
+        \tName : ${element.name}
+        \tSurname : ${element.surname}
+        ---------------------------------------------------
+        `)
+    })
 }
